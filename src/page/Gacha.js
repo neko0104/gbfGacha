@@ -104,6 +104,8 @@ export function Gacha () {
               className="w-full appearance-none rounded border py-1 md:py-2 px-3 max-w-fit"
               id="date-input"
               type="date"
+              name="today"
+              onChange={e => handelInput(e, setTitle)}
             />
           </div>
           <div className="mb-4 w-1/2 md:mb-0 md:w-1/4 md:pl-4">
@@ -114,6 +116,8 @@ export function Gacha () {
               className="w-full appearance-none rounded border py-1 md:py-2 px-3 max-w-fit"
               id="text-input"
               type="text"
+              name="target"
+              onChange={e => handelInput(e, setTitle)}
             />
           </div>
           <div className="mb-2 md:mb-4 w-full md:w-1/4 md:pl-4">
@@ -124,6 +128,8 @@ export function Gacha () {
               className="w-full appearance-none rounded border py-1 md:py-2 px-3 hideArrows max-w-fit"
               id="number-input"
               type="number"
+              name="no"
+              onChange={e => handelInput(e, setTitle)}
             />
           </div>
         </div>

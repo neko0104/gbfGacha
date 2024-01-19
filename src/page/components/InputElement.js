@@ -2,7 +2,8 @@
 const InputElement = ({ type, name, className, value, mission=f=>f, ...props}) => {
 
     return (
-        <input type={type}  name={name} className={className?className:""} defaultValue={value} onBlur={mission} onChange={mission}/>
+        <input type={type}  name={name} className={className?className:""} defaultValue={value} onBlur={mission} 
+            onKeyDown={e => {if(e.code==="Enter") mission(e)}}/>
     )
 }
 

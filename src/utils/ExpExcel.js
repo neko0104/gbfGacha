@@ -20,12 +20,12 @@ export default function ExpExcel (props) {
         data[11] = ["Ｒ", countData.r_w, countData.r_s, `${countRatio((countData.r_s+countData.r_w),(Object.values(countData).reduce((p,n)=>p+n,0)))}%`];
         data[12] = ["合計", countData.ssr_w+countData.sr_w+countData.r_w, countData.ssr_s+countData.sr_s+countData.r_s, Object.values(countData).reduce((p,n)=>p+n,0)];
         data[13] = [];
-        data[14] = ["出貨角色"];
-        data[15] = [getChara.normal];
-        data[16] = ["出貨Limited"];
-        data[17] = [getChara.limited];
-        data[18] = ["出貨召喚石"];
-        data[19] = [getChara.stone];
+        data[14] = ["出貨角色", "", "下井日期"];
+        data[15] = [getChara.normal, "", title.today];
+        data[16] = ["出貨Limited", "", "井誰"];
+        data[17] = [getChara.limited, "", title.target];
+        data[18] = ["出貨召喚石", "", "第幾井"];
+        data[19] = [getChara.stone, "", title.no];
         data[20] = ["https://github.com/neko0104/gbfGacha"];
         return data;
     }, [title, countData, gachaCount, getChara]);
