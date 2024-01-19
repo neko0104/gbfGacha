@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/gbfGacha/static/css/main.f98f8d30.css",
-    "main.js": "/gbfGacha/static/js/main.7a12d207.js",
+    "main.js": "/gbfGacha/static/js/main.747c87dd.js",
     "index.html": "/gbfGacha/index.html",
     "main.f98f8d30.css.map": "/gbfGacha/static/css/main.f98f8d30.css.map",
-    "main.7a12d207.js.map": "/gbfGacha/static/js/main.7a12d207.js.map"
+    "main.747c87dd.js.map": "/gbfGacha/static/js/main.747c87dd.js.map"
   },
   "entrypoints": [
     "static/css/main.f98f8d30.css",
-    "static/js/main.7a12d207.js"
+    "static/js/main.747c87dd.js"
   ]
 }
